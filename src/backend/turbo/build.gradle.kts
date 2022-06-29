@@ -32,6 +32,9 @@ allprojects {
                 entry("swagger-jersey2-jaxrs")
                 entry("swagger-models")
             }
+            dependencySet("io.micrometer:${Versions.micrometerVersion}") {
+                entry("micrometer-registry-prometheus")
+            }
 		}
 	}
 }
